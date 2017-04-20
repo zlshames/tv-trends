@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "A simple way to view the trends of TV Series",
   "main": "src/client/index.js",
+  "engines": {
+    "node": "7.6.0"
+  },
   "xo": {
     "extends": "./.eslintrc",
     "esnext": true,
