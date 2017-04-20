@@ -1,0 +1,969 @@
+{
+  "success": true,
+  "message": "Successfully fetched title",
+  "data": {
+    "title": "Lost",
+    "_year_data": "2004–2010",
+    "rated": "TV-14",
+    "released": "2004-09-22T04:00:00.000Z",
+    "runtime": "44 min",
+    "genres": "Adventure, Drama, Fantasy",
+    "director": "N/A",
+    "writer": "J.J. Abrams, Jeffrey Lieber, Damon Lindelof",
+    "actors": "Jorge Garcia, Josh Holloway, Yunjin Kim, Evangeline Lilly",
+    "plot": "Life is laid bare as a group of plane crash survivors find themselves stranded on a remote Pacific island. The trauma of the crash soon becomes overshadowed by the island itself, where unseen creatures stalk the jungle, paranormal happenings abound and astonishing coincidences reveal themselves. In this unique environment emotions swell as the survivors battle their inner and outer demons, and strive to live together - so that they won't die alone.",
+    "languages": "English, Portuguese, Spanish, Arabic, French, Korean, German, Latin, Russian, Japanese",
+    "country": "USA",
+    "awards": "Won 1 Golden Globe. Another 105 wins & 374 nominations.",
+    "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NzMyMzU1MV5BMl5BanBnXkFtZTcwNjc1ODUwMg@@._V1_SX300.jpg",
+    "metascore": "N/A",
+    "rating": "8.4",
+    "votes": "400,399",
+    "imdbid": "tt0411008",
+    "type": "series",
+    "totalseasons": 6,
+    "response": "True",
+    "series": true,
+    "imdburl": "https://www.imdb.com/title/tt0411008",
+    "_episodes": [
+      {
+        "season": 1,
+        "name": "Pilot: Part 1",
+        "released": "2004-09-22T04:00:00.000Z",
+        "episode": 1,
+        "rating": "9.4",
+        "imdbid": "tt0636289"
+      },
+      {
+        "season": 1,
+        "name": "Pilot: Part 2",
+        "released": "2004-09-29T04:00:00.000Z",
+        "episode": 2,
+        "rating": "9.3",
+        "imdbid": "tt0636290"
+      },
+      {
+        "season": 1,
+        "name": "Tabula Rasa",
+        "released": "2004-10-06T04:00:00.000Z",
+        "episode": 3,
+        "rating": "8.7",
+        "imdbid": "tt0636294"
+      },
+      {
+        "season": 1,
+        "name": "Walkabout",
+        "released": "2004-10-13T04:00:00.000Z",
+        "episode": 4,
+        "rating": "9.2",
+        "imdbid": "tt0636300"
+      },
+      {
+        "season": 1,
+        "name": "White Rabbit",
+        "released": "2004-10-20T04:00:00.000Z",
+        "episode": 5,
+        "rating": "8.6",
+        "imdbid": "tt0636303"
+      },
+      {
+        "season": 1,
+        "name": "House of the Rising Sun",
+        "released": "2004-10-27T04:00:00.000Z",
+        "episode": 6,
+        "rating": "8.3",
+        "imdbid": "tt0636284"
+      },
+      {
+        "season": 1,
+        "name": "The Moth",
+        "released": "2004-11-03T04:00:00.000Z",
+        "episode": 7,
+        "rating": "8.6",
+        "imdbid": "tt0636298"
+      },
+      {
+        "season": 1,
+        "name": "Confidence Man",
+        "released": "2004-11-10T05:00:00.000Z",
+        "episode": 8,
+        "rating": "8.9",
+        "imdbid": "tt0636275"
+      },
+      {
+        "season": 1,
+        "name": "Solitary",
+        "released": "2004-11-17T05:00:00.000Z",
+        "episode": 9,
+        "rating": "8.7",
+        "imdbid": "tt0636292"
+      },
+      {
+        "season": 1,
+        "name": "Raised by Another",
+        "released": "2004-12-01T05:00:00.000Z",
+        "episode": 10,
+        "rating": "8.8",
+        "imdbid": "tt0636291"
+      },
+      {
+        "season": 1,
+        "name": "All the Best Cowboys Have Daddy Issues",
+        "released": "2004-12-08T05:00:00.000Z",
+        "episode": 11,
+        "rating": "9.0",
+        "imdbid": "tt0636272"
+      },
+      {
+        "season": 1,
+        "name": "Whatever the Case May Be",
+        "released": "2005-01-05T05:00:00.000Z",
+        "episode": 12,
+        "rating": "8.2",
+        "imdbid": "tt0636302"
+      },
+      {
+        "season": 1,
+        "name": "Hearts and Minds",
+        "released": "2005-01-12T05:00:00.000Z",
+        "episode": 13,
+        "rating": "8.3",
+        "imdbid": "tt0636282"
+      },
+      {
+        "season": 1,
+        "name": "Special",
+        "released": "2005-01-19T05:00:00.000Z",
+        "episode": 14,
+        "rating": "8.3",
+        "imdbid": "tt0636293"
+      },
+      {
+        "season": 1,
+        "name": "Homecoming",
+        "released": "2005-02-09T05:00:00.000Z",
+        "episode": 15,
+        "rating": "8.5",
+        "imdbid": "tt0636283"
+      },
+      {
+        "season": 1,
+        "name": "Outlaws",
+        "released": "2005-02-16T05:00:00.000Z",
+        "episode": 16,
+        "rating": "8.8",
+        "imdbid": "tt0636288"
+      },
+      {
+        "season": 1,
+        "name": "...In Translation",
+        "released": "2005-02-23T05:00:00.000Z",
+        "episode": 17,
+        "rating": "8.6",
+        "imdbid": "tt0636268"
+      },
+      {
+        "season": 1,
+        "name": "Numbers",
+        "released": "2005-03-02T05:00:00.000Z",
+        "episode": 18,
+        "rating": "9.2",
+        "imdbid": "tt0636286"
+      },
+      {
+        "season": 1,
+        "name": "Deus Ex Machina",
+        "released": "2005-03-30T04:00:00.000Z",
+        "episode": 19,
+        "rating": "9.2",
+        "imdbid": "tt0636276"
+      },
+      {
+        "season": 1,
+        "name": "Do No Harm",
+        "released": "2005-04-06T04:00:00.000Z",
+        "episode": 20,
+        "rating": "9.0",
+        "imdbid": "tt0636277"
+      },
+      {
+        "season": 1,
+        "name": "The Greater Good",
+        "released": "2005-05-04T04:00:00.000Z",
+        "episode": 21,
+        "rating": "8.4",
+        "imdbid": "tt0636296"
+      },
+      {
+        "season": 1,
+        "name": "Born to Run",
+        "released": "2005-05-11T04:00:00.000Z",
+        "episode": 22,
+        "rating": "8.3",
+        "imdbid": "tt0636273"
+      },
+      {
+        "season": 1,
+        "name": "Exodus: Part 1",
+        "released": "2005-05-18T04:00:00.000Z",
+        "episode": 23,
+        "rating": "9.3",
+        "imdbid": "tt0636279"
+      },
+      {
+        "season": 1,
+        "name": "Exodus: Part 2",
+        "released": "2005-05-25T04:00:00.000Z",
+        "episode": 24,
+        "rating": "9.4",
+        "imdbid": "tt0636280"
+      },
+      {
+        "season": 1,
+        "name": "Exodus: Part 2 (Part II)",
+        "released": "2005-05-25T04:00:00.000Z",
+        "episode": 25,
+        "rating": "9.6",
+        "imdbid": "tt6222548"
+      },
+      {
+        "season": 2,
+        "name": "Man of Science, Man of Faith",
+        "released": "2005-09-21T04:00:00.000Z",
+        "episode": 1,
+        "rating": "9.2",
+        "imdbid": "tt0636285"
+      },
+      {
+        "season": 2,
+        "name": "Adrift",
+        "released": "2005-09-28T04:00:00.000Z",
+        "episode": 2,
+        "rating": "8.4",
+        "imdbid": "tt0636271"
+      },
+      {
+        "season": 2,
+        "name": "Orientation",
+        "released": "2005-10-05T04:00:00.000Z",
+        "episode": 3,
+        "rating": "8.9",
+        "imdbid": "tt0636287"
+      },
+      {
+        "season": 2,
+        "name": "Everybody Hates Hugo",
+        "released": "2005-10-12T04:00:00.000Z",
+        "episode": 4,
+        "rating": "8.4",
+        "imdbid": "tt0636278"
+      },
+      {
+        "season": 2,
+        "name": "...And Found",
+        "released": "2005-10-19T04:00:00.000Z",
+        "episode": 5,
+        "rating": "8.0",
+        "imdbid": "tt0636269"
+      },
+      {
+        "season": 2,
+        "name": "Abandoned",
+        "released": "2005-11-09T05:00:00.000Z",
+        "episode": 6,
+        "rating": "8.4",
+        "imdbid": "tt0636270"
+      },
+      {
+        "season": 2,
+        "name": "The Other 48 Days",
+        "released": "2005-11-16T05:00:00.000Z",
+        "episode": 7,
+        "rating": "9.0",
+        "imdbid": "tt0636299"
+      },
+      {
+        "season": 2,
+        "name": "Collision",
+        "released": "2005-11-23T05:00:00.000Z",
+        "episode": 8,
+        "rating": "8.8",
+        "imdbid": "tt0636274"
+      },
+      {
+        "season": 2,
+        "name": "What Kate Did",
+        "released": "2005-11-30T05:00:00.000Z",
+        "episode": 9,
+        "rating": "8.5",
+        "imdbid": "tt0636301"
+      },
+      {
+        "season": 2,
+        "name": "The Hunting Party",
+        "released": "2006-01-18T05:00:00.000Z",
+        "episode": 11,
+        "rating": "8.5",
+        "imdbid": "tt0636297"
+      },
+      {
+        "season": 2,
+        "name": "Fire + Water",
+        "released": "2006-01-25T05:00:00.000Z",
+        "episode": 12,
+        "rating": "7.4",
+        "imdbid": "tt0636281"
+      },
+      {
+        "season": 2,
+        "name": "The Long Con",
+        "released": "2006-02-08T05:00:00.000Z",
+        "episode": 13,
+        "rating": "8.8",
+        "imdbid": "tt0756934"
+      },
+      {
+        "season": 2,
+        "name": "One of Them",
+        "released": "2006-02-15T05:00:00.000Z",
+        "episode": 14,
+        "rating": "8.8",
+        "imdbid": "tt0758090"
+      },
+      {
+        "season": 2,
+        "name": "Maternity Leave",
+        "released": "2006-03-01T05:00:00.000Z",
+        "episode": 15,
+        "rating": "8.6",
+        "imdbid": "tt0764076"
+      },
+      {
+        "season": 2,
+        "name": "The Whole Truth",
+        "released": "2006-03-22T04:00:00.000Z",
+        "episode": 16,
+        "rating": "8.4",
+        "imdbid": "tt0769314"
+      },
+      {
+        "season": 2,
+        "name": "Lockdown",
+        "released": "2006-03-29T04:00:00.000Z",
+        "episode": 17,
+        "rating": "9.2",
+        "imdbid": "tt0771860"
+      },
+      {
+        "season": 2,
+        "name": "Dave",
+        "released": "2006-04-05T04:00:00.000Z",
+        "episode": 18,
+        "rating": "8.4",
+        "imdbid": "tt0784695"
+      },
+      {
+        "season": 2,
+        "name": "S.O.S.",
+        "released": "2006-04-12T04:00:00.000Z",
+        "episode": 19,
+        "rating": "7.9",
+        "imdbid": "tt0771861"
+      },
+      {
+        "season": 2,
+        "name": "Two for the Road",
+        "released": "2006-05-03T04:00:00.000Z",
+        "episode": 20,
+        "rating": "9.0",
+        "imdbid": "tt0782394"
+      },
+      {
+        "season": 2,
+        "name": "?",
+        "released": "2006-05-10T04:00:00.000Z",
+        "episode": 21,
+        "rating": "8.9",
+        "imdbid": "tt0786169"
+      },
+      {
+        "season": 2,
+        "name": "Three Minutes",
+        "released": "2006-05-17T04:00:00.000Z",
+        "episode": 22,
+        "rating": "8.6",
+        "imdbid": "tt0799198"
+      },
+      {
+        "season": 2,
+        "name": "Live Together, Die Alone",
+        "released": "2006-05-24T04:00:00.000Z",
+        "episode": 23,
+        "rating": "9.5",
+        "imdbid": "tt0793130"
+      },
+      {
+        "season": 3,
+        "name": "A Tale of Two Cities",
+        "released": "2006-10-04T04:00:00.000Z",
+        "episode": 1,
+        "rating": "8.7",
+        "imdbid": "tt0836956"
+      },
+      {
+        "season": 3,
+        "name": "The Glass Ballerina",
+        "released": "2006-10-11T04:00:00.000Z",
+        "episode": 2,
+        "rating": "8.1",
+        "imdbid": "tt0847791"
+      },
+      {
+        "season": 3,
+        "name": "Further Instructions",
+        "released": "2006-10-18T04:00:00.000Z",
+        "episode": 3,
+        "rating": "8.2",
+        "imdbid": "tt0840616"
+      },
+      {
+        "season": 3,
+        "name": "Every Man for Himself",
+        "released": "2006-10-25T04:00:00.000Z",
+        "episode": 4,
+        "rating": "8.4",
+        "imdbid": "tt0850964"
+      },
+      {
+        "season": 3,
+        "name": "The Cost of Living",
+        "released": "2006-11-01T04:00:00.000Z",
+        "episode": 5,
+        "rating": "8.3",
+        "imdbid": "tt0863695"
+      },
+      {
+        "season": 3,
+        "name": "I Do",
+        "released": "2006-11-08T05:00:00.000Z",
+        "episode": 6,
+        "rating": "8.7",
+        "imdbid": "tt0883770"
+      },
+      {
+        "season": 3,
+        "name": "Not in Portland",
+        "released": "2007-02-07T05:00:00.000Z",
+        "episode": 7,
+        "rating": "8.7",
+        "imdbid": "tt0891077"
+      },
+      {
+        "season": 3,
+        "name": "Flashes Before Your Eyes",
+        "released": "2007-02-14T05:00:00.000Z",
+        "episode": 8,
+        "rating": "9.1",
+        "imdbid": "tt0928284"
+      },
+      {
+        "season": 3,
+        "name": "Stranger in a Strange Land",
+        "released": "2007-02-21T05:00:00.000Z",
+        "episode": 9,
+        "rating": "7.3",
+        "imdbid": "tt0954439"
+      },
+      {
+        "season": 3,
+        "name": "Tricia Tanaka Is Dead",
+        "released": "2007-02-28T05:00:00.000Z",
+        "episode": 10,
+        "rating": "8.4",
+        "imdbid": "tt0913743"
+      },
+      {
+        "season": 3,
+        "name": "Enter 77",
+        "released": "2007-03-07T05:00:00.000Z",
+        "episode": 11,
+        "rating": "8.8",
+        "imdbid": "tt0936198"
+      },
+      {
+        "season": 3,
+        "name": "Par Avion",
+        "released": "2007-03-14T04:00:00.000Z",
+        "episode": 12,
+        "rating": "8.4",
+        "imdbid": "tt0959403"
+      },
+      {
+        "season": 3,
+        "name": "The Man from Tallahassee",
+        "released": "2007-03-21T04:00:00.000Z",
+        "episode": 13,
+        "rating": "9.2",
+        "imdbid": "tt0968992"
+      },
+      {
+        "season": 3,
+        "name": "Exposé",
+        "released": "2007-03-28T04:00:00.000Z",
+        "episode": 14,
+        "rating": "8.2",
+        "imdbid": "tt0988050"
+      },
+      {
+        "season": 3,
+        "name": "Left Behind",
+        "released": "2007-04-04T04:00:00.000Z",
+        "episode": 15,
+        "rating": "8.3",
+        "imdbid": "tt0979596"
+      },
+      {
+        "season": 3,
+        "name": "One of Us",
+        "released": "2007-04-11T04:00:00.000Z",
+        "episode": 16,
+        "rating": "8.8",
+        "imdbid": "tt0979597"
+      },
+      {
+        "season": 3,
+        "name": "Catch-22",
+        "released": "2007-04-18T04:00:00.000Z",
+        "episode": 17,
+        "rating": "8.6",
+        "imdbid": "tt0979594"
+      },
+      {
+        "season": 3,
+        "name": "D.O.C.",
+        "released": "2007-04-25T04:00:00.000Z",
+        "episode": 18,
+        "rating": "8.4",
+        "imdbid": "tt0979595"
+      },
+      {
+        "season": 3,
+        "name": "The Brig",
+        "released": "2007-05-02T04:00:00.000Z",
+        "episode": 19,
+        "rating": "9.2",
+        "imdbid": "tt0992243"
+      },
+      {
+        "season": 3,
+        "name": "The Man Behind the Curtain",
+        "released": "2007-05-09T04:00:00.000Z",
+        "episode": 20,
+        "rating": "9.4",
+        "imdbid": "tt0992244"
+      },
+      {
+        "season": 3,
+        "name": "Greatest Hits",
+        "released": "2007-05-16T04:00:00.000Z",
+        "episode": 21,
+        "rating": "9.3",
+        "imdbid": "tt0998660"
+      },
+      {
+        "season": 3,
+        "name": "Through the Looking Glass",
+        "released": "2007-05-23T04:00:00.000Z",
+        "episode": 22,
+        "rating": "9.7",
+        "imdbid": "tt1004798"
+      },
+      {
+        "season": 4,
+        "name": "The Beginning of the End",
+        "released": "2008-01-31T05:00:00.000Z",
+        "episode": 1,
+        "rating": "9.0",
+        "imdbid": "tt0994348"
+      },
+      {
+        "season": 4,
+        "name": "Confirmed Dead",
+        "released": "2008-02-07T05:00:00.000Z",
+        "episode": 2,
+        "rating": "8.9",
+        "imdbid": "tt0994359"
+      },
+      {
+        "season": 4,
+        "name": "The Economist",
+        "released": "2008-02-14T05:00:00.000Z",
+        "episode": 3,
+        "rating": "8.6",
+        "imdbid": "tt0994363"
+      },
+      {
+        "season": 4,
+        "name": "Eggtown",
+        "released": "2008-02-21T05:00:00.000Z",
+        "episode": 4,
+        "rating": "8.2",
+        "imdbid": "tt0994364"
+      },
+      {
+        "season": 4,
+        "name": "The Constant",
+        "released": "2008-02-28T05:00:00.000Z",
+        "episode": 5,
+        "rating": "9.7",
+        "imdbid": "tt0994365"
+      },
+      {
+        "season": 4,
+        "name": "The Other Woman",
+        "released": "2008-03-06T05:00:00.000Z",
+        "episode": 6,
+        "rating": "8.0",
+        "imdbid": "tt0994366"
+      },
+      {
+        "season": 4,
+        "name": "Ji Yeon",
+        "released": "2008-03-13T04:00:00.000Z",
+        "episode": 7,
+        "rating": "8.5",
+        "imdbid": "tt0994367"
+      },
+      {
+        "season": 4,
+        "name": "Meet Kevin Johnson",
+        "released": "2008-03-20T04:00:00.000Z",
+        "episode": 8,
+        "rating": "8.6",
+        "imdbid": "tt0994368"
+      },
+      {
+        "season": 4,
+        "name": "The Shape of Things to Come",
+        "released": "2008-04-24T04:00:00.000Z",
+        "episode": 9,
+        "rating": "9.2",
+        "imdbid": "tt0994369"
+      },
+      {
+        "season": 4,
+        "name": "Something Nice Back Home",
+        "released": "2008-05-01T04:00:00.000Z",
+        "episode": 10,
+        "rating": "8.1",
+        "imdbid": "tt0994349"
+      },
+      {
+        "season": 4,
+        "name": "Cabin Fever",
+        "released": "2008-05-08T04:00:00.000Z",
+        "episode": 11,
+        "rating": "8.8",
+        "imdbid": "tt0994350"
+      },
+      {
+        "season": 4,
+        "name": "There's No Place Like Home: Part 1",
+        "released": "2008-05-15T04:00:00.000Z",
+        "episode": 12,
+        "rating": "9.1",
+        "imdbid": "tt0994351"
+      },
+      {
+        "season": 4,
+        "name": "There's No Place Like Home: Part 2",
+        "released": "2008-05-29T04:00:00.000Z",
+        "episode": 13,
+        "rating": "9.4",
+        "imdbid": "tt0994352"
+      },
+      {
+        "season": 4,
+        "name": "There's No Place Like Home: Part 3",
+        "released": "2008-05-29T04:00:00.000Z",
+        "episode": 14,
+        "rating": "9.3",
+        "imdbid": "tt1952703"
+      },
+      {
+        "season": 5,
+        "name": "Because You Left",
+        "released": "2009-01-21T05:00:00.000Z",
+        "episode": 1,
+        "rating": "8.9",
+        "imdbid": "tt1280267"
+      },
+      {
+        "season": 5,
+        "name": "The Lie",
+        "released": "2009-01-21T05:00:00.000Z",
+        "episode": 2,
+        "rating": "8.4",
+        "imdbid": "tt1313407"
+      },
+      {
+        "season": 5,
+        "name": "Jughead",
+        "released": "2009-01-28T05:00:00.000Z",
+        "episode": 3,
+        "rating": "8.7",
+        "imdbid": "tt1319361"
+      },
+      {
+        "season": 5,
+        "name": "The Little Prince",
+        "released": "2009-02-04T05:00:00.000Z",
+        "episode": 4,
+        "rating": "8.4",
+        "imdbid": "tt1321693"
+      },
+      {
+        "season": 5,
+        "name": "This Place Is Death",
+        "released": "2009-02-11T05:00:00.000Z",
+        "episode": 5,
+        "rating": "8.8",
+        "imdbid": "tt1322105"
+      },
+      {
+        "season": 5,
+        "name": "316",
+        "released": "2009-02-18T05:00:00.000Z",
+        "episode": 6,
+        "rating": "8.7",
+        "imdbid": "tt1340502"
+      },
+      {
+        "season": 5,
+        "name": "The Life and Death of Jeremy Bentham",
+        "released": "2009-02-25T05:00:00.000Z",
+        "episode": 7,
+        "rating": "9.0",
+        "imdbid": "tt1321692"
+      },
+      {
+        "season": 5,
+        "name": "LaFleur",
+        "released": "2009-03-04T05:00:00.000Z",
+        "episode": 8,
+        "rating": "9.1",
+        "imdbid": "tt1341555"
+      },
+      {
+        "season": 5,
+        "name": "Namaste",
+        "released": "2009-03-18T04:00:00.000Z",
+        "episode": 9,
+        "rating": "8.6",
+        "imdbid": "tt1353861"
+      },
+      {
+        "season": 5,
+        "name": "He's Our You",
+        "released": "2009-03-25T04:00:00.000Z",
+        "episode": 10,
+        "rating": "8.6",
+        "imdbid": "tt1358333"
+      },
+      {
+        "season": 5,
+        "name": "Whatever Happened, Happened",
+        "released": "2009-04-01T04:00:00.000Z",
+        "episode": 11,
+        "rating": "8.4",
+        "imdbid": "tt1363399"
+      },
+      {
+        "season": 5,
+        "name": "Dead Is Dead",
+        "released": "2009-04-08T04:00:00.000Z",
+        "episode": 12,
+        "rating": "9.0",
+        "imdbid": "tt1368702"
+      },
+      {
+        "season": 5,
+        "name": "Some Like It Hoth",
+        "released": "2009-04-15T04:00:00.000Z",
+        "episode": 13,
+        "rating": "8.4",
+        "imdbid": "tt1378943"
+      },
+      {
+        "season": 5,
+        "name": "The Variable",
+        "released": "2009-04-29T04:00:00.000Z",
+        "episode": 14,
+        "rating": "9.0",
+        "imdbid": "tt1378944"
+      },
+      {
+        "season": 5,
+        "name": "Follow the Leader",
+        "released": "2009-05-06T04:00:00.000Z",
+        "episode": 15,
+        "rating": "8.8",
+        "imdbid": "tt1400160"
+      },
+      {
+        "season": 5,
+        "name": "The Incident: Part 1",
+        "released": "2009-05-16T04:00:00.000Z",
+        "episode": 16,
+        "rating": "9.4",
+        "imdbid": "tt1399779"
+      },
+      {
+        "season": 5,
+        "name": "The Incident: Part 2",
+        "released": "2009-05-13T04:00:00.000Z",
+        "episode": 17,
+        "rating": "9.4",
+        "imdbid": "tt2197294"
+      },
+      {
+        "season": 6,
+        "name": "LA X - Part 1",
+        "released": "2010-02-02T05:00:00.000Z",
+        "episode": 1,
+        "rating": "8.9",
+        "imdbid": "tt1453335"
+      },
+      {
+        "season": 6,
+        "name": "LA X - Part 2",
+        "released": "2010-02-02T05:00:00.000Z",
+        "episode": 2,
+        "rating": "8.6",
+        "imdbid": "tt2524344"
+      },
+      {
+        "season": 6,
+        "name": "What Kate Does",
+        "released": "2010-02-09T05:00:00.000Z",
+        "episode": 3,
+        "rating": "7.7",
+        "imdbid": "tt1560343"
+      },
+      {
+        "season": 6,
+        "name": "The Substitute",
+        "released": "2010-02-16T05:00:00.000Z",
+        "episode": 4,
+        "rating": "8.4",
+        "imdbid": "tt1533421"
+      },
+      {
+        "season": 6,
+        "name": "Lighthouse",
+        "released": "2010-02-23T05:00:00.000Z",
+        "episode": 5,
+        "rating": "8.2",
+        "imdbid": "tt1467640"
+      },
+      {
+        "season": 6,
+        "name": "Sundown",
+        "released": "2010-03-02T05:00:00.000Z",
+        "episode": 6,
+        "rating": "8.2",
+        "imdbid": "tt1467641"
+      },
+      {
+        "season": 6,
+        "name": "Dr. Linus",
+        "released": "2010-03-09T05:00:00.000Z",
+        "episode": 7,
+        "rating": "8.6",
+        "imdbid": "tt1467642"
+      },
+      {
+        "season": 6,
+        "name": "Recon",
+        "released": "2010-03-16T04:00:00.000Z",
+        "episode": 8,
+        "rating": "7.9",
+        "imdbid": "tt1467643"
+      },
+      {
+        "season": 6,
+        "name": "Ab Aeterno",
+        "released": "2010-03-23T04:00:00.000Z",
+        "episode": 9,
+        "rating": "9.4",
+        "imdbid": "tt1467644"
+      },
+      {
+        "season": 6,
+        "name": "The Package",
+        "released": "2010-03-30T04:00:00.000Z",
+        "episode": 10,
+        "rating": "8.0",
+        "imdbid": "tt1467629"
+      },
+      {
+        "season": 6,
+        "name": "Happily Ever After",
+        "released": "2010-04-06T04:00:00.000Z",
+        "episode": 11,
+        "rating": "9.0",
+        "imdbid": "tt1467630"
+      },
+      {
+        "season": 6,
+        "name": "Everybody Loves Hugo",
+        "released": "2010-04-13T04:00:00.000Z",
+        "episode": 12,
+        "rating": "8.5",
+        "imdbid": "tt1467631"
+      },
+      {
+        "season": 6,
+        "name": "The Last Recruit",
+        "released": "2010-04-20T04:00:00.000Z",
+        "episode": 13,
+        "rating": "8.3",
+        "imdbid": "tt1603637"
+      },
+      {
+        "season": 6,
+        "name": "The Candidate",
+        "released": "2010-05-04T04:00:00.000Z",
+        "episode": 14,
+        "rating": "9.0",
+        "imdbid": "tt1467632"
+      },
+      {
+        "season": 6,
+        "name": "Across the Sea",
+        "released": "2010-05-11T04:00:00.000Z",
+        "episode": 15,
+        "rating": "8.2",
+        "imdbid": "tt1467633"
+      },
+      {
+        "season": 6,
+        "name": "What They Died For",
+        "released": "2010-05-18T04:00:00.000Z",
+        "episode": 16,
+        "rating": "8.7",
+        "imdbid": "tt1467634"
+      },
+      {
+        "season": 6,
+        "name": "The End",
+        "released": "2010-05-23T04:00:00.000Z",
+        "episode": 17,
+        "rating": "8.2",
+        "imdbid": "tt1467635"
+      }
+    ],
+    "start_year": 2004,
+    "end_year": null
+  }
+}
