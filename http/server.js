@@ -1,12 +1,9 @@
-import dotenv from 'dotenv'
 import bodyParser from 'koa-bodyparser'
 import koa from 'koa'
 import koaRouter from 'koa-router'
 import sendFile from 'koa-sendfile'
 import serve from 'koa-static'
 import path from 'path'
-
-dotenv.config()
 
 // Instantiate koa and koa-router
 const app = new koa()
@@ -29,9 +26,8 @@ app.use(async function (ctx, next) {
   await next()
 });
 
-const host = process.env.SERVER_HOST
-const port = process.env.PORT || process.env.SERVER_PORT
+const port = process.env.PORT || 8080
 
-app.listen(port, host, () => {
-  console.log(`Available on http://${ host }:${ port }`)
+app.listen(port, () => {
+  console.log(`Available on http://localhost:${ port }`)
 })
