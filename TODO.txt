@@ -1,0 +1,4 @@
+- Change "cannot retrieve data" to a loading icon
+- Create an error variable
+- Add branding
+- Autocomplete for movies
