@@ -3,9 +3,6 @@
     <el-menu-item @click="$router.push({ name: 'home' })" index="1" class="brand">
       TV Trends
     </el-menu-item>
-    <el-menu-item @click="$router.push({ name: 'home' })" index="2">
-      Home
-    </el-menu-item>
     <el-menu-item v-if="$route.name !== 'home'" index="3" class="item-input">
       <form v-on:submit.prevent="handleSearch">
         <el-input

@@ -27,13 +27,8 @@
 </template>
 
 <script>
-  import LineChart from 'components/LineChart'
-
   export default {
     props: ['item', 'displayTrends', 'toggleTrends'],
-    components: {
-      LineChart
-    },
     data() {
       return {
         loading: false,
@@ -50,6 +45,7 @@
           ],
           rows: [],
           options: {
+            legend: {position: 'none'},
             title: 'Rating by Episode',
             hAxis: {
                 title: 'Episode'
@@ -58,11 +54,7 @@
                 title: 'Rating'
             },
             width: 600,
-            height: 400,
-            curveType: 'function',
-            chart: {
-              backgroundColor: 'red'
-            }
+            height: 400
           }
         }
       }
@@ -91,10 +83,13 @@
         for (let i = 0; i < seasons; i++) {
           const seasonQuery = `https://api.themoviedb.org/3/tv/${ this.item.id }/season/${i + 1}?api_key=b366cab222dc630764c88a1c3bfe41ab&language=en-US`
           const season = await fetch(seasonQuery)
-          const seasonBody = await season.json()
 
-          for (let e = 0; e < seasonBody.episodes.length; e++) {
-            episodes.push(seasonBody.episodes[e])
+          if (season.ok) {
+            const seasonBody = await season.json()
+
+            for (let e = 0; e < seasonBody.episodes.length; e++) {
+              episodes.push(seasonBody.episodes[e])
+            }
           }
         }
 
@@ -117,6 +112,7 @@
           ],
           rows: [],
           options: {
+            legend: {position: 'none'},
             title: 'Rating by Episode',
             hAxis: {
                 title: 'Episode'
@@ -125,11 +121,7 @@
                 title: 'Rating'
             },
             width: 600,
-            height: 400,
-            curveType: 'function',
-            chart: {
-              backgroundColor: 'red'
-            }
+            height: 400
           }
         }
 
@@ -145,58 +137,6 @@
 
         this.chartData = newData
         this.loading = false
-      },
-      // async getDataBySeason() {
-      //   this.currentOpt = 'bySeason'
-      //
-      //   const showData = await this.fetchShow(this.currentShow)
-      //   const episodes = showData.data._episodes
-      //   const newData = {
-      //     labels: [],
-      //     datasets: []
-      //   }
-      //
-      //   let currentSeason = 0;
-      //   for (let i = 0; i < episodes.length; i++) {
-      //     if (!newData.datasets[episodes[i].season - 1]) {
-      //       newData.datasets.push({
-      //         label: 'Season: ' + episodes[i].season,
-      //         backgroundColor: this.getRandomColor(0.3),
-      //         data: [episodes[i].rating]
-      //       })
-      //     } else {
-      //       newData.datasets[episodes[i].season - 1].data.push(Number(episodes[i].rating))
-      //     }
-      //   }
-      //
-      //   // Get season with most episodes
-      //   let max = 0, count = 0, season = 0
-      //   for (let i = 0; i < episodes.length; i++) {
-      //     if (season !== episodes[i].season) {
-      //       season = episodes[i].season
-      //
-      //       if (count > max) {
-      //         max = count
-      //       }
-      //
-      //       count = 0
-      //     }
-      //
-      //     count++
-      //   }
-      //
-      //   for (let i = 0; i < max; i++) {
-      //     newData.labels.push('Episode ' + (i + 1))
-      //   }
-      //
-      //   this.chartData = newData
-      // },
-      getRandomColor(opacity) {
-        const r = Math.floor(Math.random() * 255)
-        const g = Math.floor(Math.random() * 255)
-        const b = Math.floor(Math.random() * 255)
-
-        return `rgba(${r}, ${g}, ${b}, ${opacity})`;
       }
     }
   }

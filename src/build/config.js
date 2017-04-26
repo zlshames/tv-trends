@@ -6,6 +6,7 @@ module.exports = {
   title: 'tv-trends',
   // when you use electron please set to relative path like ./
   // otherwise only set to absolute path when you're using history mode
+  vendor: Object.keys(pkg.frontDependencies),
   publicPath: '/',
   // disable babelrc by default
   babel: {
