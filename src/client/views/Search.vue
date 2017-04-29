@@ -88,4 +88,10 @@
   .not-found {
     text-align: center;
   }
+
+  @media only screen and (max-width: 768px) {
+    .search-container {
+      width: 90%;
+    }
+  }
 </style>

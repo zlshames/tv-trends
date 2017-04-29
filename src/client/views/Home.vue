@@ -125,4 +125,10 @@
     margin-top: -60px;
     margin-bottom: 10px;
   }
+
+  @media only screen and (max-width: 768px) {
+    .body-container {
+      width: 90%;
+    }
+  }
 </style>

@@ -180,7 +180,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: (window.innerWidth > 786) ? 600 : 325,
+            width: (window.innerWidth > 786) ? 600 : 350,
             height: 400,
             backgroundColor: 'transparent'
           }
