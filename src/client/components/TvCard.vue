@@ -6,7 +6,7 @@
         <img v-if="!item.poster_path" src="http://www.freeiconspng.com/uploads/no-image-icon-6.png" />
 
         <div class="info-list">
-          <span class="info-title">{{ (item) ? item.name : 'N/A' }}</span>
+          <span class="info-title">{{ item.name }}</span>
           <div class="info-cols">
             <div class="info-col">
               <span class="info-misc"><strong>Rating:</strong> {{ item.vote_average }} / 10</span>
@@ -18,7 +18,7 @@
               <span class="info-misc"><strong>Total Votes:</strong> {{ item.vote_count }}</span>
               <span class="info-misc"><strong>Current Popularity:</strong> {{ item.popularity.toFixed(1) }}%</span>
               <span class="info-misc"><strong>Genre:</strong> {{ (item.genres[0]) ? item.genres[0].name : 'N/A' }}</span>
-              <span class="info-misc"><strong>Homepage:</strong> <a :href="item.homepage" target="_blank">Click Here</a></span>
+              <span class="info-misc"><strong><a :href="item.homepage" target="_blank">Homepage</a></strong></span>
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: 600,
+            width: (window.innerWidth > 786) ? 600 : 325,
             height: 400,
             backgroundColor: 'transparent'
           }
@@ -325,6 +325,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .card-body > p {
+    margin: 15px;
+    text-align: center;
   }
 
   .chart {
