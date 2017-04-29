@@ -6,11 +6,23 @@
         <img v-if="!item.poster_path" src="http://www.freeiconspng.com/uploads/no-image-icon-6.png" />
 
         <div class="info-list">
-          <span class="info-title">{{ item.name }}</span>
-          <span class="info-misc">Rating: {{ item.vote_average }}</span>
-          <span class="info-misc">Year: {{ getAirDate }}</span>
-          <span class="info-misc">Seasons: {{ item.number_of_seasons }}</span>
+          <span class="info-title">{{ (item) ? item.name : 'N/A' }}</span>
+          <div class="info-cols">
+            <div class="info-col">
+              <span class="info-misc"><strong>Rating:</strong> {{ item.vote_average }} / 10</span>
+              <span class="info-misc"><strong>Year:</strong> {{ getAirDate }}</span>
+              <span class="info-misc"><strong>Seasons:</strong> {{ item.number_of_seasons }}</span>
+              <span class="info-misc"><strong>Episodes:</strong> {{ item.number_of_episodes }}</span>
+            </div>
+            <div class="info-list">
+              <span class="info-misc"><strong>Total Votes:</strong> {{ item.vote_count }}</span>
+              <span class="info-misc"><strong>Current Popularity:</strong> {{ item.popularity.toFixed(1) }}%</span>
+              <span class="info-misc"><strong>Genre:</strong> {{ (item.genres[0]) ? item.genres[0].name : 'N/A' }}</span>
+              <span class="info-misc"><strong>Homepage:</strong> <a :href="item.homepage" target="_blank">Click Here</a></span>
+            </div>
+          </div>
         </div>
+
       </div>
       <div class="action-container">
         <button @click="toggleTrends(item.id)" type="button" class="el-button el-button--primary" style="float: right;">
@@ -19,10 +31,10 @@
       </div>
     </div>
     <div v-if="displayTrends" class="card-body">
-      <button v-if="view === 'bySeason'" @click="getDataByEpisode" type="button" class="el-button el-button--default">
+      <button v-if="view === 'bySeason' && chartData.rows.length > 0" @click="getDataByEpisode" type="button" class="el-button el-button--default">
         Load By Episode
       </button>
-      <button v-if="view === 'byEpisode'" @click="getDataBySeason" type="button" class="el-button el-button--default">
+      <button v-if="view === 'byEpisode' && chartData.rows.length > 0" @click="getDataBySeason" type="button" class="el-button el-button--default">
         Load By Season
       </button>
       <vue-chart v-if="chartData.rows.length > 0" class="chart" :columns="chartData.columns" :rows="chartData.rows" :options="chartData.options" />
@@ -202,7 +214,7 @@
 
         // Group by Episode
         for (let i = 0; i < most; i++) {
-          let data = [`Episode ${i}`]
+          let data = [`Episode ${i + 1}`]
 
           for (let x = 0; x < seasons.length; x++) {
             if (seasons[x][i]) {
@@ -269,6 +281,18 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 15px;
+  }
+
+  .info-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .info-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .info-title {

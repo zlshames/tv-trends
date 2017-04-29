@@ -3,7 +3,7 @@ const pkg = require('../../package')
 
 module.exports = {
   port: 4000,
-  title: 'tv-trends',
+  title: 'TV Trends',
   // when you use electron please set to relative path like ./
   // otherwise only set to absolute path when you're using history mode
   vendor: Object.keys(pkg.frontDependencies),
