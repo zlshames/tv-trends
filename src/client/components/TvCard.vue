@@ -37,7 +37,9 @@
       <button v-if="view === 'byEpisode' && chartData.rows.length > 0" @click="getDataBySeason" type="button" class="el-button el-button--default">
         Load By Season
       </button>
-      <vue-chart v-if="chartData.rows.length > 0" class="chart" :columns="chartData.columns" :rows="chartData.rows" :options="chartData.options" />
+      <div class="chart">
+        <vue-chart v-if="chartData.rows.length > 0" :columns="chartData.columns" :rows="chartData.rows" :options="chartData.options" />
+      </div>
       <p v-if="chartData.rows.length === 0 && !loading">No trends available for this title</p>
       <p v-if="chartData.rows.length === 0 && loading">Loading...</p>
     </div>
@@ -180,7 +182,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: (window.innerWidth > 786) ? 600 : 350,
+            width: (window.innerWidth > 786) ? 600 : 400,
             height: 400,
             backgroundColor: 'transparent'
           }
@@ -334,7 +336,7 @@
 
   .chart {
     width: 80%;
-    margin: 0 auto;
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
   }
 </style>
