@@ -74,7 +74,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: 600,
+            width: (window.innerWidth > 786) ? 600 : 350,
             height: 400
           }
         }
@@ -143,7 +143,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: 600,
+            width: (window.innerWidth > 786) ? 600 : 350,
             height: 400
           }
         }
@@ -182,7 +182,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: (window.innerWidth > 786) ? 600 : 400,
+            width: (window.innerWidth > 786) ? 600 : 350,
             height: 400,
             backgroundColor: 'transparent'
           }
@@ -335,7 +335,7 @@
   }
 
   .chart {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
