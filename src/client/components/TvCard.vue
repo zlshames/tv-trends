@@ -74,7 +74,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: (window.innerWidth > 786) ? 600 : 350,
+            width: this.isMobile ? 325 : 600,
             height: 400
           }
         }
@@ -95,6 +95,9 @@
         } else {
           return 'N/A'
         }
+      },
+      isMobile() {
+        return !(window.innerWidth > 786)
       }
     },
     methods: {
@@ -143,7 +146,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: (window.innerWidth > 786) ? 600 : 350,
+            width: this.isMobile ? 325 : 600,
             height: 400
           }
         }
@@ -182,7 +185,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: (window.innerWidth > 786) ? 600 : 350,
+            width: this.isMobile ? 325 : 600,
             height: 400,
             backgroundColor: 'transparent'
           }
@@ -192,7 +195,7 @@
         for (let i = 0; i < this.item.number_of_seasons; i++) {
           newData.columns.push({
             'type': 'number',
-            'label': 'Season ' + (i + 1)
+            'label': ((this.isMobile) ? 'S' : 'Season ') + (i + 1)
           })
         }
 
@@ -321,7 +324,6 @@
     border-top: 1px solid #d1dbe5;
     margin-top: 15px;
     width: 100%;
-    height: 450px;
 
     display: flex;
     flex-direction: column;
