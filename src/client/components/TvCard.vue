@@ -30,7 +30,7 @@
         </button>
       </div>
     </div>
-    <div v-if="displayTrends" class="card-body">
+    <div v-if="displayTrends" class="card-body" :style="(isMobile) ? {height: '500px'} : {height: 'auto'}">
       <button v-if="view === 'bySeason' && chartData.rows.length > 0" @click="getDataByEpisode" type="button" class="el-button el-button--default">
         Load By Episode
       </button>
