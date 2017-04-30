@@ -186,8 +186,7 @@
                 title: 'Rating'
             },
             width: this.isMobile ? 325 : 600,
-            height: 400,
-            backgroundColor: 'transparent'
+            height: 400
           }
         }
 
