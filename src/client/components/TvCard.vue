@@ -9,13 +9,13 @@
           <span class="info-title">{{ item.name }}</span>
           <div class="info-cols">
             <div class="info-col">
-              <span class="info-misc"><strong>Rating:</strong> {{ item.vote_average }} / 10</span>
+              <span class="info-misc"><strong>Rating:</strong> {{ this.imdbRating }} / 10</span>
               <span class="info-misc"><strong>Year:</strong> {{ getAirDate }}</span>
               <span class="info-misc"><strong>Seasons:</strong> {{ item.number_of_seasons }}</span>
               <span class="info-misc"><strong>Episodes:</strong> {{ item.number_of_episodes }}</span>
             </div>
             <div class="info-list">
-              <span class="info-misc"><strong>Total Votes:</strong> {{ item.vote_count }}</span>
+              <span class="info-misc"><strong>Total Votes:</strong> {{ this.imdbVotes }}</span>
               <span class="info-misc"><strong>Current Popularity:</strong> {{ item.popularity.toFixed(1) }}%</span>
               <span class="info-misc"><strong>Genre:</strong> {{ (item.genres[0]) ? item.genres[0].name : 'N/A' }}</span>
               <span class="info-misc"><strong><a :href="item.homepage" target="_blank">Homepage</a></strong></span>
@@ -53,6 +53,9 @@
       return {
         view: 'bySeason',
         loading: false,
+        imdbId: '',
+        imdbRating: '',
+        imdbVotes: '',
         chartData: {
           columns: [
             {
@@ -100,20 +103,40 @@
         return !(window.innerWidth > 786)
       }
     },
+    async mounted() {
+      const imdbQuery = `https://api.themoviedb.org/3/tv/${ this.item.id }/external_ids?api_key=b366cab222dc630764c88a1c3bfe41ab&language=en-US`
+      const ids = await fetch(imdbQuery)
+
+      if (ids.ok) {
+        const idBody = await ids.json()
+        this.imdbId = idBody.imdb_id
+      }
+
+      const infoQuery = `http://www.omdbapi.com/?i=${ this.imdbId }`
+      const info = await fetch(infoQuery)
+
+      if (info.ok) {
+        const infoBody = await info.json()
+        this.imdbRating = infoBody.imdbRating
+        this.imdbVotes = infoBody.imdbVotes
+      }
+    },
     methods: {
       async fetchEpisodes() {
         // Get episodes of show
         const seasons = this.item.number_of_seasons
         let episodes = []
         for (let i = 0; i < seasons; i++) {
-          const seasonQuery = `https://api.themoviedb.org/3/tv/${ this.item.id }/season/${i + 1}?api_key=b366cab222dc630764c88a1c3bfe41ab&language=en-US`
+          const seasonQuery = `http://www.omdbapi.com/?i=${ this.imdbId }&season=${ i + 1 }`
           const season = await fetch(seasonQuery)
 
           if (season.ok) {
             const seasonBody = await season.json()
 
-            for (let e = 0; e < seasonBody.episodes.length; e++) {
-              episodes.push(seasonBody.episodes[e])
+            for (let e = 0; e < seasonBody["Episodes"].length; e++) {
+              seasonBody["Episodes"][e].season_number = i + 1
+              seasonBody["Episodes"][e].episode_number = e + 1
+              episodes.push(seasonBody["Episodes"][e])
             }
           }
         }
@@ -152,7 +175,7 @@
         }
 
         for (let i = 0; i < episodes.length; i++) {
-          const avg = Number(episodes[i].vote_average)
+          const avg = Number(episodes[i].imdbRating)
           if (avg > 0) {
             newData.rows.push([
               `S${episodes[i].season_number}E${episodes[i].episode_number}`,
@@ -208,6 +231,8 @@
           seasons[episodes[i].season_number - 1].push(episodes[i])
         }
 
+        console.log(seasons)
+
         // Get most episodes in a season
         let most = 0
         for (let i = 0; i < seasons.length; i++) {
@@ -222,7 +247,7 @@
 
           for (let x = 0; x < seasons.length; x++) {
             if (seasons[x][i]) {
-              data.push(seasons[x][i].vote_average)
+              data.push(Number(seasons[x][i].imdbRating))
             } else {
               data.push(NaN)
             }
