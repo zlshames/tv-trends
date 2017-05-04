@@ -57,16 +57,7 @@
         imdbRating: '',
         imdbVotes: '',
         chartData: {
-          columns: [
-            {
-              'type': 'string',
-              'label': 'Episode'
-            },
-            {
-              'type': 'number',
-              'label': 'Rating'
-            }
-          ],
+          columns: [],
           rows: [],
           options: {
             legend: {position: 'none'},
@@ -85,14 +76,15 @@
     },
     watch: {
       displayTrends() {
+        // Only retrieve trends if 'Show Trends' was clicked
         if (this.displayTrends) {
-          //this.getDataByEpisode()
           this.getDataBySeason()
         }
       }
     },
     computed: {
       getAirDate() {
+        // Get the air year from full date string
         if (this.item.first_air_date) {
           return this.item.first_air_date.split('-')[0]
         } else {
@@ -104,24 +96,32 @@
       }
     },
     async mounted() {
+      // Fetch IMDB ID
       const imdbQuery = `https://api.themoviedb.org/3/tv/${ this.item.id }/external_ids?api_key=b366cab222dc630764c88a1c3bfe41ab&language=en-US`
       const ids = await fetch(imdbQuery)
-
       if (ids.ok) {
         const idBody = await ids.json()
         this.imdbId = idBody.imdb_id
       }
 
+      // Fetch info from OMDB
       const infoQuery = `http://www.omdbapi.com/?i=${ this.imdbId }`
       const info = await fetch(infoQuery)
-
       if (info.ok) {
         const infoBody = await info.json()
         this.imdbRating = infoBody.imdbRating
         this.imdbVotes = infoBody.imdbVotes
       }
+
+      // Listen for window resize, to redraw chart
+      window.addEventListener('resize', this.redrawChart);
     },
     methods: {
+      redrawChart() {
+        const opts = this.chartData.options
+        opts.width = this.isMobile ? 325 : (this.$el.clientWidth - 50)
+        this.chartData.options = opts
+      },
       async fetchEpisodes() {
         // Get episodes of show
         const seasons = this.item.number_of_seasons
@@ -169,7 +169,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: this.isMobile ? 325 : 600,
+            width: this.isMobile ? 325 : (this.$el.clientWidth - 50),
             height: 400
           }
         }
@@ -208,7 +208,7 @@
             vAxis: {
                 title: 'Rating'
             },
-            width: this.isMobile ? 325 : 600,
+            width: this.isMobile ? 325 : (this.$el.clientWidth - 50),
             height: 400
           }
         }
@@ -230,8 +230,6 @@
 
           seasons[episodes[i].season_number - 1].push(episodes[i])
         }
-
-        console.log(seasons)
 
         // Get most episodes in a season
         let most = 0
